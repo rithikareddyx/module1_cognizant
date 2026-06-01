@@ -5,95 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Local Community Event Portal</title>
 
     <style>
-
+        /* Internal CSS */
         body{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
+            background-color:#f4f7fa;
         }
-
-        /* Navigation */
-        nav{
-            background-color: black;
-            padding: 15px;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: bold;
-        }
-
-        /* Welcome Banner */
-        #welcomeBanner{
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .highlight{
-            background-color: #fff3cd;
-            color: #856404;
-            font-weight: bold;
-            padding: 5px;
-        }
-
-        .event-image{
-            width: 200px;
-            height: 150px;
-            border: 3px solid black;
-            border-radius: 10px;
-        }
-
-        table{
-            margin: auto;
-            border-collapse: collapse;
-        }
-
-        td{
-            padding: 15px;
-            text-align: center;
-        }
-
-        /* Form Styling */
-        form{
-            width: 60%;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        input,
-        select,
-        textarea{
-            width: 100%;
-            padding: 10px;
-            margin-top: 8px;
-            margin-bottom: 15px;
-        }
-
-        button{
-            background-color: darkblue;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-        }
-
-        footer{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
     </style>
 
 </head>
@@ -118,9 +43,10 @@
 
             <div id="welcomeBanner">
 
-                <h1>
+                <h1 id="mainHeader" style="color:red;">
                     Welcome to the Local Community Event Portal
                 </h1>
+
 
                 <p class="highlight">
 
@@ -144,11 +70,11 @@
             </h2>
 
           
-            <table border="1">
+            <table>
 
                 <tr>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="musicevent.webp"
                              alt="Music Event"
@@ -159,7 +85,7 @@
 
                     </td>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="food.jpg"
                              alt="Food Event"
@@ -170,7 +96,7 @@
 
                     </td>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="sports.jpg"
                              alt="Sports Event"
@@ -185,7 +111,7 @@
 
                 <tr>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="dance.jpeg"
                              alt="Dance Event"
@@ -196,7 +122,7 @@
 
                     </td>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="bookfair.jpg"
                              alt="Book Event"
@@ -207,7 +133,7 @@
 
                     </td>
 
-                    <td>
+                    <td class="eventCard">
 
                         <img src="art.jpg"
                              alt="Art Event"
@@ -314,7 +240,26 @@
         </section>
 
     </main>
+    <section>
 
+    <h2>Community Bulletin</h2>
+
+    <div class="newsArticle">
+
+        The Local Community Event Portal brings together
+        residents through music festivals, sports events,
+        art exhibitions, food carnivals and educational
+        activities. Citizens can register online, receive
+        updates and stay informed about upcoming programs.
+
+        The city council encourages active participation
+        and volunteer involvement to strengthen community
+        engagement and improve social interaction among
+        residents.
+
+    </div>
+
+</section>
     <footer>
 
         <p>
